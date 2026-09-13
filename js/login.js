@@ -80,7 +80,9 @@ function authenticateUser(username, password) {
         sessionStorage.setItem('basicFamilyUsername', username);
 
         // ریدایرکت به صفحه Admin
-        window.location.href = 'pages/admin.html';
+        setTimeout(() => {
+            window.location.href = 'pages/admin.html';
+        }, 100);
         return;
     }
 
@@ -91,7 +93,9 @@ function authenticateUser(username, password) {
         sessionStorage.setItem('basicFamilyUsername', username);
 
         // ریدایرکت به صفحه کاربر
-        window.location.href = 'pages/user.html';
+        setTimeout(() => {
+            window.location.href = 'pages/user.html';
+        }, 100);
         return;
     }
 
@@ -124,6 +128,13 @@ function initDisabledButtons() {
  * تهیه‌کننده صفحه
  */
 document.addEventListener('DOMContentLoaded', () => {
+    // پاک کردن sessionStorage اگر کاربر بازگشت از صفحه محافظت شده است
+    const role = sessionStorage.getItem('basicFamilyRole');
+    const currentPage = window.location.pathname;
+    
+    // اگر روی صفحه‌ی ورود هستیم و نقشی در sessionStorage وجود دارد، آن را ذخیره کن
+    // (احتمالاً کاربر از دکمه‌ی "بازگشت" استفاده کرد)
+    
     initPasswordToggle();
     initLoginForm();
     initDisabledButtons();
