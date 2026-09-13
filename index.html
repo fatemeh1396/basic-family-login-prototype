@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic Family - ورود به حساب کاربری">
+    <title>Basic Family - ورود</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Header -->
+            <div class="login-header">
+                <h1 class="login-title">Basic Family</h1>
+                <p class="login-subtitle">ورود به حساب کاربری</p>
+            </div>
+
+            <!-- Prototype Status -->
+            <div class="prototype-status">
+                <p class="status-badge">نسخه آزمایشی</p>
+                <p class="status-description">احراز هویت واقعی و سرویس پیامکی در مرحله بعد اضافه می‌شوند.</p>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="login-form">
+                <!-- Username Field -->
+                <div class="form-group">
+                    <label for="username" class="form-label">نام کاربری</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        class="form-input" 
+                        placeholder="نام کاربری را وارد کنید"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password" class="form-label">رمز عبور</label>
+                    <div class="password-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input" 
+                            placeholder="رمز عبور را وارد کنید"
+                            autocomplete="current-password"
+                            required
+                        >
+                        <button 
+                            type="button" 
+                            id="togglePassword" 
+                            class="password-toggle"
+                            aria-label="نمایش/پنهان کردن رمز عبور"
+                            title="نمایش/پنهان کردن رمز عبور"
+                        >
+                            <img src="assets/icons/eye.svg" alt="" class="toggle-icon">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Validation Error -->
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+                <!-- Login Button -->
+                <button type="submit" class="btn-login">ورود</button>
+            </form>
+
+            <!-- Footer Links -->
+            <div class="login-footer">
+                <button type="button" id="forgotPasswordBtn" class="btn-link" disabled title="در نسخه بعد فعال می‌شود">فراموشی رمز عبور</button>
+                <span class="separator">•</span>
+                <button type="button" id="registerBtn" class="btn-link" disabled title="در نسخه بعد فعال می‌شود">ثبت‌نام</button>
+            </div>
+        </div>
+
+        <!-- Test Credentials Hint (for development only) -->
+        <div class="test-credentials-hint">
+            <p><strong>حساب آزمایشی Owner:</strong></p>
+            <p>نام کاربری: <code>owner</code></p>
+            <p>رمز عبور: <code>BF-Owner-2026</code></p>
+            <p><strong>حساب معمولی:</strong> هر نام کاربری و رمزی (غیر owner)</p>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
