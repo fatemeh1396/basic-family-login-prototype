@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic Family - داشبورد کاربر">
+    <title>Basic Family - داشبورد کاربر</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="user-layout">
+        <!-- Sidebar -->
+        <aside class="user-sidebar">
+            <!-- Sidebar Header -->
+            <div style="padding: var(--space-lg) var(--space-md); border-bottom: 1px solid var(--border);">
+                <h2 style="font-size: var(--font-size-lg); color: var(--accent); margin: 0;">Basic Family</h2>
+                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: var(--space-sm) 0 0 0;">کاربر</p>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="sidebar-menu">
+                <li class="sidebar-item">
+                    <button class="sidebar-link active" data-page="home">
+                        <img src="../assets/icons/home.svg" alt="" class="sidebar-icon">
+                        <span>خانه</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="profile">
+                        <img src="../assets/icons/user.svg" alt="" class="sidebar-icon">
+                        <span>پروفایل</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="notifications">
+                        <img src="../assets/icons/bell.svg" alt="" class="sidebar-icon">
+                        <span>اعلان‌ها</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="settings">
+                        <img src="../assets/icons/settings.svg" alt="" class="sidebar-icon">
+                        <span>تنظیمات</span>
+                    </button>
+                </li>
+            </nav>
+
+            <!-- Logout Button -->
+            <button id="logoutBtn" class="btn-logout">
+                <img src="../assets/icons/logout.svg" alt="" class="logout-icon">
+                <span>خروج</span>
+            </button>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="user-content">
+            <!-- Header -->
+            <header class="user-header">
+                <div class="user-header-left">
+                    <h1 class="user-title">داشبورد</h1>
+                </div>
+                <div class="admin-user-info">
+                    <img src="../assets/icons/user.svg" alt="" class="admin-user-icon">
+                    <div>
+                        <p class="admin-user-name" id="usernameDisplay">کاربر</p>
+                        <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: 0;">نقش: کاربر عادی</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Area -->
+            <main class="user-main">
+                <!-- Welcome Section -->
+                <section class="user-welcome">
+                    <h2>خوش‌آمدید!</h2>
+                    <p>به داشبورد کاربری Basic Family خوش‌آمدید. اینجا می‌توانید با خانواده‌تان ارتباط برقرار کنید و از ویژگی‌های مختلف بهره‌مند شوید.</p>
+                </section>
+
+                <!-- Dashboard Cards -->
+                <section class="user-cards">
+                    <div class="user-card">
+                        <h3>خانواده</h3>
+                        <p>مشاهده اعضای خانواده‌تان و اشتراک‌گذاری لحظات خوش با آن‌ها.</p>
+                    </div>
+
+                    <div class="user-card">
+                        <h3>پست‌ها</h3>
+                        <p>به اشتراک‌گذاری عکس‌ها و داستان‌های خود با خانواده‌تان.</p>
+                    </div>
+
+                    <div class="user-card">
+                        <h3>اعلان‌ها</h3>
+                        <p>دریافت اعلان درباره فعالیت‌های جدید خانواده و پیام‌های دوستان.</p>
+                    </div>
+
+                    <div class="user-card">
+                        <h3>جامعه</h3>
+                        <p>دیدار از جوامع علاقه‌مندی‌تان و برقراری ارتباط با افراد دیگری که علاقه‌های مشترک دارند.</p>
+                    </div>
+
+                    <div class="user-card">
+                        <h3>مرکز اعتماد</h3>
+                        <p>کنترل حریم خصوصی و امنیت حساب کاربری‌تان.</p>
+                    </div>
+
+                    <div class="user-card">
+                        <h3>تنظیمات</h3>
+                        <p>سفارشی‌سازی تجربه‌ی کاربری و مدیریت ترجیحات‌تان.</p>
+                    </div>
+                </section>
+
+                <!-- Future Features Section -->
+                <section style="margin-top: var(--space-2xl); padding-top: var(--space-2xl); border-top: 1px solid var(--border);">
+                    <h3 style="margin-bottom: var(--space-lg);">ویژگی‌های آینده</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">ما بر روی ویژگی‌های جدید و هیجان‌انگیز کار می‌کنیم. منتظر بمانید!</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-lg);">
+                        <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--text); margin-bottom: var(--space-sm);">📸 گالری</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: 0;">ذخیره‌سازی و سازماندهی عکس‌های خانوادگی</p>
+                        </div>
+
+                        <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--text); margin-bottom: var(--space-sm);">🎵 موسیقی</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: 0;">اشتراک‌گذاری و شنیدن موسیقی مورد علاقه</p>
+                        </div>
+
+                        <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--text); margin-bottom: var(--space-sm);">📝 یادداشت‌ها</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: 0;">نوشتن و اشتراک یادداشت‌های خصوصی</p>
+                        </div>
+
+                        <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--text); margin-bottom: var(--space-sm);">✅ وظایف</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: 0;">ایجاد و مدیریت وظایف خانوادگی</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/user.js"></script>
+</body>
+</html>
