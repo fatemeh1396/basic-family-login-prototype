@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic Family - داشبورد مدیر">
+    <title>Basic Family - داشبورد مدیر</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <!-- Sidebar Header -->
+            <div style="padding: var(--space-lg) var(--space-md); border-bottom: 1px solid var(--border);">
+                <h2 style="font-size: var(--font-size-lg); color: var(--accent); margin: 0;">Basic Family</h2>
+                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: var(--space-sm) 0 0 0;">مدیر سیستم</p>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="sidebar-menu">
+                <li class="sidebar-item">
+                    <button class="sidebar-link active" data-page="dashboard">
+                        <img src="../assets/icons/home.svg" alt="" class="sidebar-icon">
+                        <span>داشبورد</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="users">
+                        <img src="../assets/icons/users.svg" alt="" class="sidebar-icon">
+                        <span>مدیریت کاربران</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="content">
+                        <img src="../assets/icons/file.svg" alt="" class="sidebar-icon">
+                        <span>مدیریت محتوا</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="reports">
+                        <img src="../assets/icons/report.svg" alt="" class="sidebar-icon">
+                        <span>گزارش‌ها</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="moderation">
+                        <img src="../assets/icons/shield.svg" alt="" class="sidebar-icon">
+                        <span>تاییدیه و Moderation</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="notifications">
+                        <img src="../assets/icons/bell.svg" alt="" class="sidebar-icon">
+                        <span>اعلان‌ها</span>
+                    </button>
+                </li>
+                <li class="sidebar-item">
+                    <button class="sidebar-link" data-page="settings">
+                        <img src="../assets/icons/settings.svg" alt="" class="sidebar-icon">
+                        <span>تنظیمات</span>
+                    </button>
+                </li>
+            </nav>
+
+            <!-- Logout Button -->
+            <button id="logoutBtn" class="btn-logout">
+                <img src="../assets/icons/logout.svg" alt="" class="logout-icon">
+                <span>خروج</span>
+            </button>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="admin-content">
+            <!-- Header -->
+            <header class="admin-header">
+                <div class="admin-header-left">
+                    <h1 class="admin-title">داشبورد مدیر</h1>
+                </div>
+                <div class="admin-user-info">
+                    <img src="../assets/icons/user.svg" alt="" class="admin-user-icon">
+                    <div>
+                        <p class="admin-user-name" id="usernameDisplay">مدیر</p>
+                        <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin: 0;">نقش: مالک سیستم</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Area -->
+            <main class="admin-main">
+                <!-- Welcome Section -->
+                <section class="admin-welcome">
+                    <h2>خوش‌آمدید!</h2>
+                    <p>به داشبورد مدیریت Basic Family خوش‌آمدید. این نسخه‌ی آزمایشی برای نمایش معماری واجهه است.</p>
+                </section>
+
+                <!-- Dashboard Cards -->
+                <section class="admin-cards">
+                    <div class="admin-card">
+                        <h3>مدیریت کاربران</h3>
+                        <p>مشاهده و مدیریت تمامی کاربران سیستم. اختصاص نقش‌ها و مجوزها در این بخش انجام می‌شود.</p>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>مدیریت محتوا</h3>
+                        <p>کنترل محتوای منتشر شده در پلتفرم. تایید، ویرایش و حذف محتوا از این بخش.</p>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>گزارش‌ها و آمار</h3>
+                        <p>مشاهده آمارهای مفصل درباره فعالیت پلتفرم و رفتار کاربران.</p>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>تاییدیه و Moderation</h3>
+                        <p>بررسی گزارش‌های کاربران و اتخاذ اقدامات لازم برای تعدیل محتوا.</p>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>اعلان‌ها</h3>
+                        <p>ارسال اعلان عمومی به کاربران و پیگیری تحویل پیام‌ها.</p>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>تنظیمات سیستم</h3>
+                        <p>تنظیم پارامترهای عمومی، امنیتی و شخصی‌سازی برای تمام کاربران.</p>
+                    </div>
+                </section>
+
+                <!-- Role Architecture Section -->
+                <section style="margin-top: var(--space-2xl); padding-top: var(--space-2xl); border-top: 1px solid var(--border);">
+                    <h3 style="margin-bottom: var(--space-lg);">معماری نقش‌ها</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">سیستم Basic Family از ساختار نقش‌های زیر پشتیبانی خواهد کرد:</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-lg);">
+                        <div style="background-color: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--accent); margin-bottom: var(--space-sm);">کاربر عادی</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">دسترسی محدود به ویژگی‌های اساسی</p>
+                        </div>
+
+                        <div style="background-color: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--accent); margin-bottom: var(--space-sm);">مدیریت‌کننده</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">مدیریت محتوا و کاربران</p>
+                        </div>
+
+                        <div style="background-color: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--accent); margin-bottom: var(--space-sm);">ناظر</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">نظارت و تعدیل محتوا</p>
+                        </div>
+
+                        <div style="background-color: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space-lg);">
+                            <p style="font-weight: var(--font-weight-semibold); color: var(--accent); margin-bottom: var(--space-sm);">مالک سیستم</p>
+                            <p style="font-size: var(--font-size-sm); color: var(--text-secondary); margin: 0;">دسترسی کامل به تمامی عملیات</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
